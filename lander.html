@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robbins Mastery — Unlock Your True Potential</title>
+<meta name="description" content="Discover the unique teaching style of Tony Robbins. Learn about immersion, state management, and the psychology of success.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dark-mode.css">
+<script defer="" src="js/main.js"></script>
+<style>
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#verification-modal {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+#verification-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#verify-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+}
+#verify-btn:hover {
+  background-color: #b20710;
+  cursor: pointer;
+}
+body {
+  background: url('images/lap.png') no-repeat center center fixed;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url('images/mob.png');
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container nav-wrap">
+    <div class="brand">
+      <span class="brand-name" style="font-weight:bold; color:#e50914;">ROBBINS MASTERY</span>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/guide.html">Immersion</a></li>
+        <li><a href="pages/icehocky.html">State</a></li>
+        <li class="more">
+          <button class="more-btn" aria-haspopup="true" aria-expanded="false">More</button>
+          <ul class="dropdown">
+            <li><a href="pages/mls.html">NLP Strategies</a></li>
+            <li><a href="pages/college.html">Seminars</a></li>
+            <li><a href="pages/events.html">The Firewalk</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/privacy.html">Privacy</a></li>
+            <li><a href="pages/terms.html">Terms</a></li>
+            <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<dialog id="verification-modal" class="modal-dialog">
+  <h2>Step Into Your Power</h2>
+  <p>You are about to explore the transformative strategies of Tony Robbins.</p>
+  <p>Are you ready to take your life to the next level?</p>
+  <button id="verify-btn" class="btn">Yes, I'm Ready</button>
+  <p id="loading-msg" style="display:none; margin-top:10px;">Verifying connection, please wait. <span class="spinner"></span></p>
+</dialog>
+
+</body></html>
